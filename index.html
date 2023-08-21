@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hex-w2-hw</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="data:image/png;base64,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" type="image/x-icon">
+
+    <!-- Facebook Metadata Start -->
+    <meta property="og:title" content="個人網站">
+    <meta property="og:description" content="Hi, I'm William Lee, a Front-End Developer with a passion for building beautiful and responsive websites that provide an optimal user experience.">
+    <meta property="og:image" content="assets/images/people.png">
+
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <header class="bg-black">
+        <div class="container">
+            <ul class="navbarList">
+                <li class="navbarItem">WILLIAM LEE</li>
+                <li class="navbarItem">BASED IN TAIWAN</li>
+                <li class="navbarItem">CURRENTLY FRONT END ENGINEER AT HEXSCHOOL</li>
+                <li class="navbarItem"><a href="#contact">CONTACT ME</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- banner -->
+    <section class="bg-black">
+        <div class="container">
+            <div class="banner">
+                <img src="assets/images/people.png" alt="headshot">
+                <div class="bannerText">
+                    <h2>Hi <br>
+                        I’m a front-end developer
+                    </h2>
+                    <div class="titleSide">
+                    <h1>William</h1>
+                    <a href="#" class="btn btnWhite">contact me <img src="assets/images/arrow_outward.png" alt="arrow"></a>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="bg-images" style="background-image: url(./assets/images/background-img.png);">
+        <div class="intr container">
+            <div class="intrText">
+                <h2>Introduction</h2>
+                <p>Hi, I'm William Lee, a Front-End Developer with a passion for building beautiful and responsive websites that provide an optimal user experience.</p>
+                <div class="intrIcon">
+                    <img src="./assets/images/Rectangle 21.png" alt="sparkle">
+                    <img src="./assets/images/Rectangle 21.png" alt="sparkle">
+                    <img src="./assets/images/Rectangle 21.png" alt="sparkle">
+                </div>
+            </div>
+            <div class="intrImages">
+                <img src="./assets/images/sparkle.png" alt="">
+                <img src="./assets/images/photographer.png" alt="">
+                <img src="./assets/images/people-2.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="bg-white">
+        <div class="about container">
+            <ol class="aboutList">
+                <li class="aboutItem">
+                    <h5>01</h5>
+                    <h5>Attention to Detail</h5>
+                    <p>Meticulous code analysis and optimization.</p>
+                </li>
+                <li class="aboutItem">
+                    <h5>02</h5>
+                    <h5>Adaptability</h5>
+                    <p>Swift learning of new technologies.</p>
+                </li>
+                <li class="aboutItem">
+                    <h5>03</h5>
+                    <h5>Problem Solver</h5>
+                    <p>Identifying and resolving issues.</p>
+                </li>
+                <li class="aboutItem">
+                    <h5>04</h5>
+                    <h5>ATeam Player</h5>
+                    <p>Collaborates and shares ideas.</p>
+                </li>
+            </ol>
+            <div class="aboutText">
+                <h2>About Me</h2>
+                <p>With over 5 years of experience, I'm proficient in HTML, CSS, JavaScript, jQuery, and React. I have a strong understanding of user experience design and accessibility. I'm always learning new technologies and techniques to stay up-to-date in the field.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section style="background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);">
+        <div id="contact" class="container contact">
+            <div class="contactText">
+                <h2>CONTACT ME <img src="./assets/images/trending_flat_black_24dp 1.png" alt=""></h2>
+            </div>
+            <ul class="contactList">
+                <li class="contactItem"><a href="#"><img src="./assets/images/discord.png" alt="discord"></a></li>
+                <li class="contactItem"><a href="#"><img src="./assets/images/instagram.png" alt="instagram"></a></li>
+                <li class="contactItem"><a href="#"><img src="./assets/images/message.png" alt="message"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Project -->
+    <section class="bg-white">
+        <div class="cotainer project">
+            <h2>My Projects</h2>
+            <div class="projectList">
+                <div class="project-1">
+                    <img src="./assets/images/Rectangle 10.png" alt="">
+                </div>
+                <div class="project-2">
+                    <div class="card">
+                        <img src="./assets/images/Rectangle 15.png" class=".cardImage" alt="">
+                        <div class="cardText">
+                            <p>I've worked on a variety of websites, including e-commerce sites, blogs, and landing pages. I take pride in creating clean, efficient, and user-friendly code.</p>
+                            <a href="#" class="btn btnBlack">SEE MORE <img src="./assets/images/arrow_outward_white.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="project-3">
+                        <img src="./assets/images/Rectangle 14.png" alt="">
+                        <img src="./assets/images/Rectangle 29.png" alt="">
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black">
+        <div class="container">
+            <p>all rights reserved @hexschool2023</p>
+        </div>
+    </footer>
+</body>
+</html>

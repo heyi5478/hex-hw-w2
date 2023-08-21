@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@import url(./reset.css);
+
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    font-family: "Bruno Ace SC";
+    font-weight: 400;
+} 
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+/*navbar*/
+
+.navbarList {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+    border-bottom: 1px solid transparent;
+}
+.navbarList .navbarItem, .navbarList .navbarItem a {
+    color: #D1D1D1;
+}
+
+.navbarList .navbarItem a:hover {
+    color: #00FFA3;
+}
+
+/*banner*/
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+
+.banner .bannerText {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner .titleSide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.banner .titleSide h1 {
+    color: #00FFA3;
+}
+
+.btn {
+    border: none;
+    border-radius: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.btnWhite {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn img {
+    padding-left: 0.25rem;
+}
+
+.btn:hover {
+    background-color: #00FFA3;
+    transition: 0.5s;
+}
+
+/*intr*/
+
+.bg-images {
+    background-size: cover;
+}
+
+.intr, .about, .projects {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.intr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intr h2 {
+    color: #fff;
+    margin-bottom: 2.25rem;
+}
+
+.intr p {
+    font-size: 1.5rem;
+    color: #fff;
+    max-width: 526px;
+    margin-bottom: 2.25rem;
+}
+
+.intr .intrImages {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+/*about*/
+
+.bg-white {
+    background-color: #fff;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .aboutList {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 636px;
+    gap: 24px;
+}
+
+.about .aboutList .aboutItem {
+    width: 48%;
+    padding: 1.25rem;
+    color: #15161D;
+    border: 1px solid  #E3E3E3;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.about .aboutList .aboutItem:hover {
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+.about .aboutList .aboutItem h5 {
+    font-size: 1.25rem;
+}
+
+.about .aboutText {
+    max-width: 526px;
+}
+
+.about .aboutText h2 {
+    margin-bottom: 2.25rem;
+}
+
+.about .aboutText p {
+    font-size: 1.5rem;
+}
+
+/*contact*/
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.contact .contactText {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.contact .contactText h2 {
+    color: #fff;
+}
+
+.contactList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.contactList .contactItem:hover img {
+    border-radius: 2.5rem;
+    box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/*project*/
+
+.project h2 {
+    max-width: 746px;
+    margin-left: auto;
+    margin-bottom: 1rem;
+}
+
+.projectList {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.projectList .project-1 {
+    max-width: 32%;
+}
+
+.projectList .project-2 {
+    max-width: 66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projectList .project-2 .card {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.projectList .project-2 .card .cardImage {
+    max-width: 23%;
+}
+
+.projectList .project-2 .card .cardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btnBlack {
+    background-color: #000;
+    color: #fff;
+    width: 185px;
+    padding-right: 0px;
+}
+
+.projectList .project-2 .card .cardText button {
+    max-width: 185px;
+}
+
+.projectList .project-2 .project-3 {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/*footer*/
+
+footer {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+}
